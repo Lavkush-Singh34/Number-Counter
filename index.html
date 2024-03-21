@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <script src="./script.js" defer></script>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 80vw;
+            height: 60vh;
+            background-color: pink;
+
+        }
+
+        .container h1 {
+            display: inline-block;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            display: ;
+        }
+
+        .ctrlBtns {
+            display: inline-block;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Counter</h1>
+    <div class="container">
+        <h1 id="value">value</h1>
+        <div class="controls">
+            <button class="ctrlBtns" id="decrease">Decrease</button>
+            <button class="ctrlBtns" type="reset">Reset</button>
+            <button class="ctrlBtns" id="increase">Increase</button>
+        </div>
+    </div>
+</body>
+
+</html>
